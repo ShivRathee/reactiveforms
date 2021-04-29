@@ -1,0 +1,15 @@
+<table>
+    <thead>
+        <tr>
+            <th>email</th>
+            <th>name</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of userCollection">
+            <td >{{user.email}}</td>
+            <td >{{user.name}}</td>
+            
+        </tr>
+    </tbody>
+</table>
