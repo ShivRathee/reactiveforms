@@ -8,12 +8,16 @@ import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { HttpClientModule } from "@angular/common/http";
 import { UserComponent } from './user/user.component';
+import { UpdateComponent } from './update/update.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     SignupComponent,
-    UserComponent
+    UserComponent,
+    UpdateComponent,
+  
   ],
   imports: [
     BrowserModule,

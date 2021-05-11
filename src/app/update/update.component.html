@@ -1,0 +1,10 @@
+<form [formGroup]="form" (submit)="updateform(form.value)">
+   
+    <div>
+        <label> Phone Number </label>
+        <input type="number" formControlName="number">
+    </div>
+   
+   
+    <button type="submit" [disabled]="form.invalid">submit</button>
+</form> 

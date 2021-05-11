@@ -1,15 +1,26 @@
 <table>
     <thead>
         <tr>
+            <th>Id</th>
             <th>email</th>
             <th>name</th>
+           
+            <th>PhoneNo</th>
+
         </tr>
     </thead>
     <tbody>
         <tr *ngFor="let user of userCollection">
+            <td>{{user.id}}</td>
             <td >{{user.email}}</td>
             <td >{{user.name}}</td>
+            <td>{{user.number}}</td>
+          
+            <td><input type="button" value="remove" (click)="remove(user.id)"></td>
+            <td><input type="button" value="update" (click)="update(user.id)"></td>
             
         </tr>
     </tbody>
+   
+    
 </table>
